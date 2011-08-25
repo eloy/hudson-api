@@ -78,6 +78,7 @@ module Hudson
 
       shell = "#Prepare project\n"
       buckminster = "import '${WORKSPACE}/feature.p2.site/site.cquery'\n"
+      buckminster += "build\n"
       buckminster += "perform -D target.os=* -D target.ws=* -D target.arch=* feature.p2.site#site.p2\n"
 
 

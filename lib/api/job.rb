@@ -43,6 +43,12 @@ module Hudson
       send_xml_post_request(url, config)
     end
 
+    # Perform a build
+    def self.run(jobname)
+      url = "#{Hudson[:url]}/job/#{jobname}/build"
+      send_post_request(url)
+    end
+
 
     private
     def load
