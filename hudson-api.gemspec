@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "hudson-api.gemspec",
     "lib/api/job.rb",
     "lib/api/job_config.rb",
     "lib/api/job_instance.rb",
