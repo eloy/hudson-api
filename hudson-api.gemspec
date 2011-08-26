@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{hudson-api}
-  s.version = "0.3.0"
+  s.version = "0.3.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Eloy Gomez}]
-  s.date = %q{2011-08-25}
+  s.date = %q{2011-08-26}
   s.description = %q{Allow manage Hudson CI from ruby}
   s.email = %q{eloy@indeos.es}
   s.extra_rdoc_files = [
