@@ -81,10 +81,10 @@ module Hudson
       buckminster += "build\n"
       buckminster += "perform -D target.os=* -D target.ws=* -D target.arch=* feature.p2.site#site.p2\n"
 
+      # Setup targets as csv
+      tgts = @targets.map{|a| a["feature"]}.join(",")
+      shell +=  "/opt/hudson-osx/tools/prepare ${WORKSPACE} \"#{tgts}\"\n"
 
-      @targets.each do |t|
-        shell +=  "/opt/hudson-osx/tools/prepare ${WORKSPACE} #{t["feature"]}\n"
-      end
 
       project.builders do |builder|
         # Shell tashs
